@@ -4,7 +4,7 @@ A plugin to see informations about manga in `Hain`
 ## Installation
 
 ```
-/hpm install anime
+/hpm install manga
 ```
 
 ## Usage
