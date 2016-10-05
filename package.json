@@ -1,0 +1,29 @@
+{
+  "name": "hain-plugin-manga",
+  "version": "1.1.3",
+  "description": "Get info on mangas",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angrevol/hain-plugin-manga.git"
+  },
+  "author": "Angrevol",
+  "license": "MIT",
+  "keywords": [
+    "hain0",
+    "hain-0.5.0"
+  ],
+  "dependencies": {
+    "got": "latest",
+    "cheerio": "latest",
+    "fs": "latest",
+    "path": "latest"
+  },
+  "hain": {
+    "prefix": "/manga",
+    "usage": "/manga something",
+    "icon": "#fa fa-book",
+    "redirect": "/manga "
+  }
+}

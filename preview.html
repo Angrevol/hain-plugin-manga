@@ -1,0 +1,100 @@
+<html>
+	<head>
+		<style>
+			@font-face {
+				font-family: Roboto;
+				src: url(https://cdnjs.cloudflare.com/ajax/libs/ink/3.1.10/fonts/Roboto/roboto-light-webfont.woff);
+			}
+			html {
+				font-family: Roboto;
+				box-shadow: inset 0px 0px 10px -2px rgba(0,0,0,0.68);
+			}
+			.img-block {
+				text-align: center;
+				width:30%;
+				float: left;
+				height:auto;
+				box-shadow: 6px 10px 39px -14px rgba(0,0,0,0.68);
+			}
+			img {
+				width:100%;
+				height:auto;
+			}
+			.info-block {
+				float: right;
+				width: 70%;
+			}
+			.desc-block {
+				text-align: justify;
+				float: left;
+				width: calc(100% - 30px);
+				padding: 15px;
+			}
+			table {
+				margin: 0 auto;
+				padding: 0;
+				table-layout: fixed;
+				border-collapse: collapse;
+			}
+			tr {
+				margin: 0;
+				padding: 0;
+				width:100%;
+				height:100%;
+			}
+			tr:not(:last-child) {
+				border-bottom: 1px solid gray;
+			}
+			td {
+				margin: 0;
+				padding: 0;
+			}
+			td>div {
+				font-size: 14px;
+				margin: 0;
+				padding-left: 10px;
+				padding-right: 10px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+			td:first-child>div{
+				text-align: left;
+			}
+			td:last-child>div{
+				text-align: right;
+			}
+		</style>
+	</head>
+	<body>
+		<h3 style="text-align:center;">%title%</h3>
+		<div class="img-block">
+			<img src="%src%">
+		</div>
+		<div class="info-block">
+			<table>
+				<tr>
+					<td><div>Type:</div></td><td><div>%type%</div></td>
+				</tr>
+				<tr>
+					<td><div>Status:</div></td><td><div>%status%</div></td>
+				</tr>
+				%volume%
+				%chapter%
+				<tr>
+					<td><div>Genre:</div></td><td><div>%genre%</div></td>
+				</tr>
+				<tr>
+					<td><div>Published:</div></td><td><div>%published%</div></td>
+				</tr>
+				<tr>
+					<td><div>Rank:</div></td><td><div>%rank%</div></td>
+				</tr>
+			</table>
+		</div>
+		<div class="desc-block">
+			<hr>
+			<p>%desc%</p>
+			<hr>
+		</div>
+	</body>
+</html>
